@@ -9,7 +9,7 @@
 
 # 基本信息
 * 雷电3可以热插拔
-* 睡眠唤醒基本正常（偶尔唤醒屏幕不亮需要重新开盖）
+* 睡眠唤醒基本正常
 * 外放&耳机正常运作
 * 网卡免驱 蓝牙正常运行
 * 唤醒不会出现蓝牙失效
@@ -26,9 +26,14 @@
 重建缓存命令：
 sudo kextcache -i /
 ```
+# 2018-04-12
+* darkwake值设为1，经反复测试，唤醒不再黑屏（有背光）
+* 设置了快速启动，按下电源键计算开机时间35秒左右。可在boot中修改参数，去掉fast选项后在timeout中设置超时时间
 # 2018-04-07
 * clover更新到4427
 
 # Credit
 * [hoanX](https://github.com/hoanX/xps13-9360-i7-7560u)
 * [the-darkvoid](https://github.com/the-darkvoid/XPS9360-macOS)
+
+
