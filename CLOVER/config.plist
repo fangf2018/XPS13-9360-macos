@@ -19,7 +19,7 @@
 			<key>Fixes</key>
 			<dict>
 				<key>FixDisplay</key>
-				<true/>
+				<false/>
 				<key>FixHeaders</key>
 				<true/>
 				<key>FixMutex</key>
@@ -315,13 +315,17 @@
 			<string>SSDT-YTBT.aml</string>
 			<string>SSDT-TBFP.aml</string>
 		</array>
+		<key>smartUPS</key>
+		<false/>
 	</dict>
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 -alcbeta -igfxbeta abm_firstpolldelay=16000 darkwake=no -shikibeta -igdvmtbeta -lilubeta</string>
+		<string>darkwake=1 abm_firstpolldelay=16000 dart=0</string>
 		<key>DefaultVolume</key>
 		<string>Macintosh HD</string>
+		<key>Fast</key>
+		<true/>
 		<key>HibernationFixup</key>
 		<false/>
 		<key>NeverHibernate</key>
@@ -332,8 +336,6 @@
 		<false/>
 		<key>SkipHibernateTimeout</key>
 		<false/>
-		<key>Timeout</key>
-		<integer>2</integer>
 		<key>XMPDetection</key>
 		<false/>
 	</dict>
@@ -356,7 +358,7 @@
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
-			<string>56</string>
+			<string>13</string>
 		</dict>
 		<key>FakeID</key>
 		<dict>
@@ -380,12 +382,16 @@
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
-			<false/>
+			<true/>
 			<key>FixOwnership</key>
 			<true/>
+			<key>HighCurrent</key>
+			<true/>
 			<key>Inject</key>
-			<false/>
+			<true/>
 		</dict>
+		<key>UseIntelHDMI</key>
+		<false/>
 	</dict>
 	<key>GUI</key>
 	<dict>
@@ -420,6 +426,8 @@
 			<string>Preboot</string>
 			<string>Recovery</string>
 		</array>
+		<key>Language</key>
+		<string>en:0</string>
 		<key>Mouse</key>
 		<dict>
 			<key>DoubleClick</key>
@@ -466,7 +474,7 @@
 			<false/>
 		</dict>
 		<key>ig-platform-id</key>
-		<string>0x02002659</string>
+		<string>0x59260002</string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
