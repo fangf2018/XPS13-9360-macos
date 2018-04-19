@@ -25,12 +25,6 @@
 重建缓存命令：
 sudo kextcache -i /
 ```
-# 2018-04-12
-* 更新Shiki.kext v2.2.5 解决 itunes 崩溃
-* darkwake值设为1，经反复测试，唤醒不再黑屏（有背光）
-* 设置了快速启动，按下电源键计算开机时间35秒左右。可在boot中修改参数，去掉fast选项后在timeout中设置超时时间
-# 2018-04-07
-* clover更新到4427
 
 # Credit
 * [hoanX](https://github.com/hoanX/xps13-9360-i7-7560u)
