@@ -12,14 +12,18 @@
 		<string>0xB2</string>
 		<key>#ResetValue</key>
 		<string>0x73</string>
+		<key>AutoMerge</key>
+		<false/>
 		<key>DSDT</key>
 		<dict>
 			<key>DropOEM_DSM</key>
 			<false/>
 			<key>Fixes</key>
 			<dict>
-				<key>FixHeaders</key>
-				<true/>
+				<key>FixHPET</key>
+				<false/>
+				<key>FixIPIC</key>
+				<false/>
 				<key>FixMutex</key>
 				<false/>
 				<key>FixWAK</key>
@@ -267,6 +271,8 @@
 			<key>ReuseFFFF</key>
 			<false/>
 		</dict>
+		<key>FixHeaders</key>
+		<true/>
 		<key>ResetAddress</key>
 		<string>0xB2</string>
 		<key>ResetValue</key>
@@ -317,23 +323,25 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 abm_firstpolldelay=16000 -v darkwake=1</string>
+		<string> dart=0 abm_firstpolldelay=16000 brcmfx-country=#a</string>
+		<key>CustomLogo</key>
+		<string>Theme</string>
 		<key>DefaultVolume</key>
 		<string>Macintosh HD</string>
+		<key>Fast</key>
+		<true/>
 		<key>HibernationFixup</key>
 		<false/>
 		<key>NeverHibernate</key>
-		<true/>
+		<false/>
 		<key>NoEarlyProgress</key>
 		<true/>
 		<key>Secure</key>
 		<false/>
 		<key>SkipHibernateTimeout</key>
 		<false/>
-		<key>Timeout</key>
-		<integer>0</integer>
 		<key>XMPDetection</key>
-		<false/>
+		<string>Yes</string>
 	</dict>
 	<key>BootGraphics</key>
 	<dict>
@@ -351,39 +359,17 @@
 	<dict>
 		<key>AddProperties</key>
 		<array/>
-		<key>Audio</key>
-		<dict>
-			<key>Inject</key>
-			<string>13</string>
-		</dict>
-		<key>FakeID</key>
-		<dict>
-			<key>ATI</key>
-			<string>0x0</string>
-			<key>IMEI</key>
-			<string>0x0</string>
-			<key>IntelGFX</key>
-			<string>0x0</string>
-			<key>LAN</key>
-			<string>0x0</string>
-			<key>NVidia</key>
-			<string>0x0</string>
-			<key>SATA</key>
-			<string>0x0</string>
-			<key>WIFI</key>
-			<string>0x0</string>
-			<key>XHCI</key>
-			<string>0x0</string>
-		</dict>
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
-			<false/>
+			<true/>
 			<key>FixOwnership</key>
 			<true/>
 			<key>Inject</key>
 			<false/>
 		</dict>
+		<key>UseIntelHDMI</key>
+		<true/>
 	</dict>
 	<key>GUI</key>
 	<dict>
